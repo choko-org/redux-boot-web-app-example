@@ -21,6 +21,7 @@
   "homepage": "https://github.com/choko-org/redux-boot-web-app-example#readme",
   "dependencies": {
     "express": "^4.13.4",
+    "json-server": "^0.8.9",
     "redux": "^3.3.1",
     "redux-actions": "^0.9.1",
     "redux-boot": "^0.1.1",
