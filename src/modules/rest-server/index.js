@@ -11,8 +11,6 @@ export default {
       if (action.type == HTTP_BOOT) {
         let httpServer = action.payload.httpServer
 
-        // console.log(jsonServer);
-        // httpServer.use(jsonServer.defaults())
         httpServer.use('/api', jsonServer.router('db.json'))
       }
 
