@@ -4,6 +4,7 @@
   "description": "A Choko Redux example to demonstrate how to create a web server.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && node build/index.js",
     "build": "rm -f build/index.js* && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
