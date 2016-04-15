@@ -1,8 +1,8 @@
 {
-  "name": "choko-redux-web-server-example",
+  "name": "redux-boot-web-app-example",
   "version": "1.0.0",
-  "description": "A Choko Redux example to demonstrate how to create a web server.",
-  "main": "index.js",
+  "description": "An example to demonstrate how to create a web app with Redux Boot.",
+  "main": "build/index.js",
   "scripts": {
     "start": "npm run build && node build/index.js",
     "build": "rm -f build/index.js* && webpack",
@@ -10,23 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choko-org/choko-redux-web-server-example.git"
+    "url": "git+https://github.com/choko-org/redux-boot-web-app-example.git"
   },
-  "keywords": [],
+  "keywords": ["redux-boot", "redux"],
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/choko-org/choko-redux-web-server-example/issues"
+    "url": "https://github.com/choko-org/redux-boot-web-app-example/issues"
   },
-  "homepage": "https://github.com/choko-org/choko-redux-web-server-example#readme",
+  "homepage": "https://github.com/choko-org/redux-boot-web-app-example#readme",
   "dependencies": {
-    "choko-redux": "choko-org/choko-redux#master",
     "express": "^4.13.4",
     "redux": "^3.3.1",
     "redux-actions": "^0.9.1",
-    "redux-promise": "^0.5.3",
-    "redux-router": "^0.1.0",
-    "serialize-javascript": "^1.2.0"
+    "redux-boot": "^0.1.1",
+    "redux-promise": "^0.5.3"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",

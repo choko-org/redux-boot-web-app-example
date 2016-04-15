@@ -1,4 +1,4 @@
-import Choko from 'choko-redux'
+import boot from 'redux-boot'
 import path from 'path'
 
 import webServerModule from './modules/web-server'
@@ -18,4 +18,4 @@ const modules = [
   staticServerModule
 ]
 
-const app = Choko(initialState, modules)
+const app = boot(initialState, modules)

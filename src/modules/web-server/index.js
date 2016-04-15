@@ -1,7 +1,6 @@
 import express from 'express'
 import {createAction} from 'redux-actions'
-
-const BOOT = 'choko/core/BOOT'
+import {BOOT} from 'redux-boot'
 
 export const HTTP_REQUEST = 'choko/core/web-server/HTTP_REQUEST'
 export const HTTP_BOOT = 'choko/core/web-server/HTTP_BOOT'
@@ -40,6 +39,7 @@ export default {
   }
 }
 
+// Http request Action.
 export const httpRequest = createAction(HTTP_REQUEST, async ({request, response}) => {
   return {
     request,
@@ -47,4 +47,5 @@ export const httpRequest = createAction(HTTP_REQUEST, async ({request, response}
   }
 })
 
+// Http server bootstrap Action.
 export const httpBoot = createAction(HTTP_BOOT, (httpServer) => ({httpServer}))
