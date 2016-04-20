@@ -3,6 +3,7 @@ import path from 'path'
 
 import webServerModule from './modules/web-server'
 import staticServerModule from './modules/static-server'
+import restServerModule from './modules/rest-server'
 
 const initialState = {
   variables: {
@@ -15,7 +16,8 @@ const initialState = {
 
 const modules = [
   webServerModule,
-  staticServerModule
+  staticServerModule,
+  restServerModule
 ]
 
 const app = boot(initialState, modules)
